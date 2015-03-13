@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript"> 
+	function changeText() {
+		var oldHTML = document.getElementById('para1').innerHTML;//Put the script before the spot you call it
+		var newHTML = "<span style='color:#FF0000'>" + oldHTML + "</span>";//set the new value.
+		document.getElementById('para1').innerHTML = newHTML; //apply the value. I always forget this part.
+	}
+	<!--I referenced this page http://www.tizag.com/javascriptT/javascript-innerHTML.php --> 
+</script>
+	</head>
+		<title>FE2015 Project 01</title>
+	<body>
+		<div class="title"><h1>Hello World: Front End Web Design</h1></div>
+		<div class="app">
+			<div class="screenshot"><a href="http://www.glimmerville.com"><img src="images/art.jpg" alt="Creativity"></a></div>
+			<div class="description"><p>Hello World! This is just a simple web page for a simple project.</p><br>
+				<p>But you asked us to change the font red, so I decided to try this:</p><br>
+				<p id='para1'>Click the button to change the text red!</p>
+				<input type="button" onclick="changeText()" value="Click Me!"/> </div>
+		</div>
+		<hr>
+		</body>
+</html>
